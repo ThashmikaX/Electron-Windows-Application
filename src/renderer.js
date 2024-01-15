@@ -28,4 +28,22 @@
 
 import './index.css';
 
-console.log('👋 This message is being logged by "renderer.js", included via Vite');
+document.addEventListener('DOMContentLoaded', function() {
+    var signInForm = document.querySelector('form');
+    var signUpForm = document.querySelectorAll('form')[1];
+
+    signInForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        console.log('Sign In Data:', { email: email, password: password });
+    });
+
+    signUpForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('newname').value;
+        var email = document.getElementById('newemail').value;
+        var password = document.getElementById('newpassword').value;
+        console.log('Sign Up Data:', { name: name, email: email, password: password });
+    });
+});
