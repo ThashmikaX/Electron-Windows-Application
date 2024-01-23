@@ -28,6 +28,25 @@
 
 import './index.css';
 
+const Store = require('electron-store');
+
+const schema = {
+	foo: {
+		type: 'number',
+		maximum: 100,
+		minimum: 1,
+		default: 50
+	},
+	bar: {
+		type: 'string',
+		format: 'url'
+	}
+};
+
+const store = new Store({schema});
+console.log(store.get('foo'));
+console.log("Sudesh");
+
 document.addEventListener('DOMContentLoaded', function() {
     var signInForm = document.querySelector('form');
     var signUpForm = document.querySelectorAll('form')[1];

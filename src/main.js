@@ -16,6 +16,12 @@ const createWindow = () => {
     },
   });
 
+  // Assuming mainWindow is your BrowserWindow instance
+  mainWindow.setAlwaysOnTop(true, 'floating');
+
+  // Disable the menu bar
+  mainWindow.setMenuBarVisibility(false);
+
   // and load the index.html of the app.
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
     mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
