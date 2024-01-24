@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello World!</title>
-    <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="register.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,9 +26,16 @@
     <div class="container-div">
       <div class="login-box" style="font-weight: 300">
         <p>Welcome!</p>
-        <p style="font-weight: 600">Sign in to</p>
+        <p style="font-weight: 600">Sign up to</p>
         <p>Student management system</p>
         <br />
+        <p>Email</p>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your email"
+          class="username"
+        />
         <p>Username</p>
         <input
           type="text"
@@ -43,17 +50,24 @@
           placeholder="Enter your password"
           class="username"
         />
+        <p>Confirm password</p>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          class="username"
+        />
         <div class="remeber-me">
           <input type="checkbox" id="tickbox" name="tickbox" />
           <p style="margin-right: auto">Remember me</p>
           <p>Frogot password</p>
         </div>
-        <button type="button" class="btn btn-dark w-100">Login</button>
+        <button type="button" class="btn btn-dark w-100">Register</button>
         <p style="margin-top: 20px">
-          Don't have an account? <a href="Pages/register.html" class="register-link">Register</a>
+          Don't have an account? <a href="../index.html" class="register-link">Login</a>
         </p>
       </div>
-    <div class="image-div">
+      <div class="image-div">
         <img class="image" src="../src/images/328.Cup-Of-Coffee.png" alt="" />
       </div>
     </div>

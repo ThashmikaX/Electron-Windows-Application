@@ -1,5 +1,9 @@
 body {
   background: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -8,15 +12,26 @@ body {
 }
 
 .container-div {
-  width: 100%;
+  width: 100dvw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-div {
+  width: 60%;
   height: 100%;
+
+  margin-left: auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image {
-  width: 50vw;
+  width: 80%;
   height: auto;
 }
 
@@ -29,6 +44,7 @@ body {
   border: .5px solid rgb(0, 0, 0);
   padding: 30px 30px;
   border-radius: 10px;
+  margin-right: auto;
 }
 
 .username {
