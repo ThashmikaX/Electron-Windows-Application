@@ -16,6 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script type="module" src="register.js"></script>
   </head>
   <body>
     <script
@@ -35,6 +36,7 @@
           name="email"
           placeholder="Enter your email"
           class="username"
+          id="email"
         />
         <p>Username</p>
         <input
@@ -42,6 +44,7 @@
           name="username"
           placeholder="Enter your username"
           class="username"
+          id="username"
         />
         <p>Password</p>
         <input
@@ -49,22 +52,25 @@
           name="password"
           placeholder="Enter your password"
           class="username"
+          id="password"
         />
         <p>Confirm password</p>
         <input
           type="password"
-          name="password"
+          name="confirmPassword"
           placeholder="Enter your password"
           class="username"
+          id="confirmPassword"
         />
         <div class="remeber-me">
           <input type="checkbox" id="tickbox" name="tickbox" />
           <p style="margin-right: auto">Remember me</p>
           <p>Frogot password</p>
         </div>
-        <button type="button" class="btn btn-dark w-100">Register</button>
+        <button type="button" class="btn btn-dark w-100" id="registerButton">Register</button>
         <p style="margin-top: 20px">
-          Don't have an account? <a href="../index.html" class="register-link">Login</a>
+          Don't have an account?
+          <a href="../index.html" class="register-link">Login</a>
         </p>
       </div>
       <div class="image-div">
