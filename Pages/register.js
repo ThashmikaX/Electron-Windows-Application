@@ -29,6 +29,7 @@ var loginButton = document.getElementById('registerButton');
 // Add an event listener to the login button
 loginButton.addEventListener('click', function () {
     // Get form data
+    alert("Register Successful");
     var email = document.querySelector('input[name="email"]').value;
     var username = document.querySelector('input[name="username"]').value;
     var password = document.querySelector('input[name="password"]').value;

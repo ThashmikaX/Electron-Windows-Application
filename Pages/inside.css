@@ -113,3 +113,86 @@ html {
 
     
 }
+
+
+.second-row {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.content-div {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    padding-left: 50px;
+}
+
+html {
+    height: 100%;
+}
+
+.second-row-left {
+    background-color: #EEEEEE;
+    color: rgb(0, 0, 0);
+    
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    height: 180%;
+    width: 30%;
+    border: #000000;
+    
+    flex-direction: row;
+    align-items: center;
+}
+
+.second-row-left-head {
+    align-items: center;
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+.second-row-right {
+    background-color: #EEEEEE;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    height: 180%;
+    width: 100%;
+    border: #000000;
+    
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.text-leftside{
+    font-size: 20px;
+    font-weight: 500;
+}
+.text-courses{
+    font-size: 20px;
+    font-weight: 500;
+}
